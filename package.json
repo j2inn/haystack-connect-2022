@@ -1,0 +1,42 @@
+{
+  "name": "haystack-connect-2022",
+  "version": "1.0.0",
+  "description": "Haystack Connection 2022 demo!",
+  "scripts": {
+    "codegen": "cross-env FIN_HOME= npx defcodegen -t *all* && npm run format",
+    "doc": "typedoc --logLevel Error ./src/haystack/types.ts",
+    "format": "prettier-eslint \"src/**/*.ts\" --write",
+    "lint": "eslint --fix --ext ts,tsx,js,jsx src/",
+    "checktypes": "tsc --noEmit",
+    "demo": "ts-node ./src/index.ts"
+  },
+  "author": "Gareth Johnson",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "project haystack",
+    "haystack",
+    "core",
+    "typescript",
+    "haystack-connect",
+    "2022"
+  ],
+  "dependencies": {
+    "haystack-codegen": "^0.19.0",
+    "haystack-core": "^2.0.38",
+    "haystack-units": "^1.0.20"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "prettier-eslint": "^15.0.1",
+    "prettier-eslint-cli": "^7.1.0",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.23.14",
+    "typescript": "^4.8.3"
+  }
+}
